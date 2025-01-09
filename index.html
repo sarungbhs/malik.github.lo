@@ -1,46 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profil Abdul Malik</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio M ABDUL MALIK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            padding: 1em;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        nav button:hover {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 2em;
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1><div class="marquee">
+            <b>WELCOME TO PORTOFOLIO MUHAMAD ADBUL MALIK (1101221145)</b>
+          </div>
+          
+          <style>
+            .marquee {
+              width: 100%;
+              overflow: hidden;
+              white-space: nowrap;
+              box-sizing: border-box;
+            }
+          
+            .marquee {
+              display: inline-block;
+              animation: marquee 15s linear infinite;
+            }
+          
+            @keyframes marquee {
+              from {
+                transform: translateX(50%);
+              }
+              to {
+                transform: translateX(-100%);
+              }
+            }
+          </style>
+    </header>
+
+    <nav>
+        <button onclick="showSection('profil')"><b>Profil</b></button>
+        <button onclick="showSection('kontak')"><b>Kontak</b></button>
+        <button onclick="showSection('skill')"><b>Skill</b></button>
+        <button onclick="showSection('Riwayat Pendidikan')"><b>Riwayat Pendidikan</b</button>
+        <button onclick="showSection('Hobi')"><b>Hobi</b</button>
+    </nav>
+
     <div class="container">
-      <div class="header">
-        <img src="abdul.jpg" alt="Abdul Malik" class="profile-image" />
-        <div class="name-title">
-          <h1>M ABDUL MALIK</h1>
-          <p>
-            Mahasiswa S1 teknik informatik.Saya bercita cita ingin menjadi
-            seorang web devloper agar bisa membuat suatu web yang berguna untuk
-            seluruh rakyat indonesia.
-          </p>
+        <section id="profil" class="active">
+            <h2>Profil</h2>
+            <p><b>Nama</b> : MUHAMAD ABDUL MALIK</p>  
+            <p><b>Alamat :</b> Kp.Kalumpang Ds.Kalumpang Kec.Padarincang Serang-Banten</p>
+            <p><b>Tempat,Tanggal,Lahir :</b> SERANG,21-02-2004</p>
+        </section>
+
+        <section id="kontak">
+            <h2>Silahkan hubungi kontak yang ada di dibawah :</h2>
+            <p><a href="https://email :malikabdul06471@gmail.com" target="_blank"><img src="e:\projek kamis\projek\kamis 1\email.png"alt="email" style="width:50px; height:50px;"></a></p>
+            <p><a href="https://wa.me/083192831978" target="_blank"><img src="e:\projek kamis\projek\kamis 1\wa.png"alt="whatsapp" style = "width:50px; height:50px;"></a>
+            <p><a href="https://www.instagram.com/m.abdul_malik21" target="_blank"><img src="e:\projek kamis\projek\kamis 1\ig.png"alt="instagram" style = "width:50px; height:50px;"> </a></br>
+        </section>
+ 
+        <section id="skill">
+            <ul>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: gray;
+        }
+        .skill-container {
+            margin-bottom: 15px;
+        }
+        .skill-title {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            height: 20px;
+            position: relative;
+            margin-top: 5px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 8px;
+            text-align: right;
+            color: white;
+            font-size: 14px;
+            line-height: 20px;
+            padding-right: 5px;
+            box-sizing: border-box;
+        }
+        .html { background-color: #2ecc71; width: 90%; }
+        .css { background-color: #3498db; width: 80%; }
+        .js { background-color: #e74c3c; width: 15%; }
+        .php { background-color: #7f8c8d; width: 30%; }
+        .tilawah { background-color: #4b2ecc; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <h1>My Skills</h1>
+    
+    <div class="skill-container">
+        <p class="skill-title">HTML</p>
+        <div class="progress-bar">
+            <div class="progress-bar-fill html">90%</div>
         </div>
-      </div>
-      <div class="content">
-        <div class="section">
-          <h2>PENDIDIKAN</h2>
-          <p>UNIVERSITAS BANTEN JAYA<br />S1 Teknik Informatika</p>
-          <p>MA AL-KHAERIYAH RANCARNAJI<br />Lulusan Tahun 2022</p>
-        </div>
-        <div class="section">
-          <h3>KEAHLIAN</h3>
-          <ul>
-            <li>Membuat web</li>
-            <li>Mampu menguasai bahasa yang basic seperti html,css dan js.</li>
-            <li>Memahami di bidang tilawah</li>
-          </ul>
-        </div>
-      </div>
-      <div class="copy-section">
-        <h4>IMAGE</h4>
-        <div class="copy-images">
-          <img src="ahmd.jpg" alt="Contoh Copy 1" />
-          <img src="odon.jpg" alt="Contoh Copy 2" />
-        </div>
-      </div>
     </div>
-  </body>
+    
+    <div class="skill-container">
+        <p class="skill-title">CSS</p>
+        <div class="progress-bar">
+            <div class="progress-bar-fill css">80%</div>
+        </div>
+    </div>
+    
+    <div class="skill-container">
+        <p class="skill-title">JS</p>
+        <div class="progress-bar">
+            <div class="progress-bar-fill js">15%</div>
+        </div>
+    </div>
+    
+    <div class="skill-container">
+        <p class="skill-title">PHP</p>
+        <div class="progress-bar">
+            <div class="progress-bar-fill php">30%</div>
+        </div>
+    </div>
+
+    <div class="skill-container">
+        <p class="skill-title">TILAWAH</p>
+        <div class="progress-bar">
+            <div class="progress-bar-fill tilawah">100%</div>
+        </div>
+    </div>
+</body>
+</html>
+            </ul>
+        </section>
+
+        <section id= "Riwayat Pendidikan">
+            <ul>
+            <h2>Pendidikan</h2>
+            <p>SD: SDN Bugel 2007-2016</p>
+            <P>MTS : Mts Mathla'ul Anwar citasuk 2016-2019</P>
+            <p>MA : MA Al-Khaerah Rancaeanji 2019-2021</p>
+            </ul>
+        </section>
+        
+
+        <section id="Hobi">
+            <p>1.Hobi saya yaitu saya suka bermain sepak bola</p>
+            <img src = "e:\projek kamis\projek\kamis 1\bola.jpg" style="width:400px; margin:px auto;">
+            <p>2.Dan saya suja game salah satu nya MOBILE LEGEND</p>
+            <img src = "e:\projek kamis\projek\kamis 1\mL.jpg" style="width:400px; margin:0px auto;">
+            <ul>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
 </html>
